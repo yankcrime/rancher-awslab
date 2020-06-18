@@ -8,9 +8,9 @@ nodes:
       internal_address: ${nodes[k].private_ip}
       user: ubuntu
       role:
-        - controlplane
-        - etcd
-        - worker
+%{ for role in nodes[k].roles ~}
+        - ${role}
+%{ endfor ~}
 %{ endfor ~}
 ingress:
   provider: nginx
