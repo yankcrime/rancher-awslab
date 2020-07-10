@@ -14,7 +14,7 @@ nodes:
 %{ endfor ~}
 ingress:
   provider: nginx
-kubernetes_version: v1.17.5-rancher1-1
+kubernetes_version: v1.18.3-rancher2-2
 monitoring:
   provider: metrics-server
   replicas: 1
