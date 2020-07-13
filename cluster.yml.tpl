@@ -14,7 +14,7 @@ nodes:
 %{ endfor ~}
 ingress:
   provider: nginx
-kubernetes_version: v1.18.3-rancher2-2
+kubernetes_version: ${kubernetes_version}
 monitoring:
   provider: metrics-server
   replicas: 1
@@ -47,7 +47,7 @@ upgrade_strategy:
   max_unavailable_controlplane: '1'
   max_unavailable_worker: 10%
   node_drain_input:
-    delete_local_data: 'false'
+    delete_local_data: false
     force: false
     grace_period: -1
     ignore_daemon_sets: true

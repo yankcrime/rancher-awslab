@@ -3,7 +3,7 @@ variable cluster_name {
 }
 
 variable kubernetes_version {
-  default = "v1.17.5-rancher1-1"
+  default = "v1.18.3-rancher2-2"
 }
 
 variable aws_access_key {
@@ -33,4 +33,3 @@ variable node_worker_count {
 variable aws_region {
   default = "eu-west-2"
 }
-
