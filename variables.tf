@@ -33,3 +33,7 @@ variable node_worker_count {
 variable aws_region {
   default = "eu-west-2"
 }
+
+variable iam_instance_profile {
+  default = ""
+}

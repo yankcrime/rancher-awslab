@@ -18,6 +18,8 @@ kubernetes_version: ${kubernetes_version}
 monitoring:
   provider: metrics-server
   replicas: 1
+cloud_provider:
+    name: aws
 network:
   mtu: 0
   options:

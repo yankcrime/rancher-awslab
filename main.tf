@@ -1,10 +1,12 @@
 module "rancher_infra" {
-  source = "github.com/yankcrime/tf-module-rancher-infra-aws"
+  source = "../tf-module-rancher-infra-aws"
 
-  aws_access_key = var.aws_access_key
-  aws_secret_key = var.aws_secret_key
-  aws_region     = var.aws_region
-  prefix         = var.aws_prefix
+  aws_access_key       = var.aws_access_key
+  aws_secret_key       = var.aws_secret_key
+  aws_region           = var.aws_region
+  prefix               = var.aws_prefix
+  iam_instance_profile = var.iam_instance_profile
+  clusterid            = "nickjones"
 
   node_master_count = var.node_master_count
   node_worker_count = var.node_worker_count
