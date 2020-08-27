@@ -19,7 +19,7 @@ monitoring:
   provider: metrics-server
   replicas: 1
 cloud_provider:
-    name: aws
+  name: aws
 network:
   mtu: 0
   options:

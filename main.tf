@@ -12,7 +12,7 @@ module "rancher_infra" {
   node_worker_count = var.node_worker_count
   node_all_count    = var.node_all_count
 
-  # deploy_lb = true  # Deploy NLB pointing to nodes with worker role
+  deploy_lb = true  # Deploy NLB pointing to nodes with worker role
   # route53_zone = "my.org"  # Use route53 zone to add registry
   # route53_name = "rancher-ha"        
 }
