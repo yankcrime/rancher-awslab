@@ -2,6 +2,10 @@ variable cluster_name {
   default = "rke"
 }
 
+variable clusterid {
+  default = ""
+}
+
 variable kubernetes_version {
   default = "v1.18.3-rancher2-2"
 }

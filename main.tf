@@ -6,7 +6,7 @@ module "rancher_infra" {
   aws_region           = var.aws_region
   prefix               = var.aws_prefix
   iam_instance_profile = var.iam_instance_profile
-  clusterid            = "nickjones"
+  clusterid            = var.clusterid
 
   node_master_count = var.node_master_count
   node_worker_count = var.node_worker_count
